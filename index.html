@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Special Question ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hearts" aria-hidden="true"></div>
+  <main class="container" id="questionPage">
+    <div class="card">
+      <div class="emoji">🌹</div>
+      <h1>Hey <span id="crushName">Srusshhhhhhh......</span> ❤️</h1>
+      <p>I have a very important question for you... 👀</p>
+      <h2>Will you come on a date with me? 🥺💕</h2>
+      <div class="buttons"><button id="yesBtn" type="button">YES! 😍</button><button id="noBtn" type="button">No 😅</button></div>
+    </div> 
+  </main>
+  <section class="success hidden" id="successPage" aria-live="polite">
+    <div class="celebration">
+      <div class="bigEmoji">🥳💖🎉</div>
+      <h1>YAYYYYY!!! 😭❤️</h1>
+      <p>You just made me the happiest person! 🥰</p>
+      <div class="dateCard">
+        <h2>Hey Dear Just Plan Our Date 🌹</h2>
+        <p class="plannerIntro">You get to choose what works best for you. 💕</p>
+        <form id="dateForm" action="https://formspree.io/f/mrpzwoyp" method="POST">
+          <label for="date">📅 Date</label><input id="date" name="date" type="date" required>
+          <label for="time">⏰ Time</label><input id="time" name="time" type="time" required>
+          <label for="place">📍 Place</label><input id="place" name="place" type="text" placeholder="Your favourite café, park..." required>
+          <input name="_subject" type="hidden" value="New date plan 💖">
+          <button class="planButton" type="submit">Save our plan 💖</button>
+        </form>
+        <div id="planConfirmation" class="planConfirmation hidden"></div>
+      </div>
+      <p class="message">I can't wait to spend some time with you! 💕</p>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
